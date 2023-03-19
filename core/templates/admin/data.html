@@ -10,10 +10,6 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="static/playground_assets/logo.ico" rel="icon">
-  <link href="static/playground_assets/logo.ico" rel="apple-touch-icon">
-
-  <!-- Favicons -->
   <link href="./static/assets/img/favicon.png" rel="icon">
   <link href="./static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -359,8 +355,8 @@
               <!-- Clear -->
             <div class="col-xxl-12 col-xl-12">
               <div class="card info-card customers-card">
-                  <a href="download_users?file_path=./static/users.xlsx" download>
-                  <button class="btn btn-danger w-100" >Users Download ♣ ↓ ♠ ↓ ♣ ↓ ♠ ↓ ♣ ↓ </button>
+                  <a href="{{ url_for('clogs') }}">
+                  <button class="btn btn-warning w-100" >Users Download</button>
                   </a>
               </div>
             </div>
@@ -369,14 +365,20 @@
             <!-- Clear -->
             <div class="col-xxl-12 col-xl-12">
               <div class="card info-card customers-card">
-                  <a href="download_firms?file_path=./static/firms.xlsx" download>
-                  <button class="btn btn-danger w-100" >Firms Download ♣ ↓ ♠ ↓ ♣ ↓ ♠ ↓ ♣ ↓ </button>
+                  <a href="{{ url_for('clogs') }}">
+                  <button class="btn btn-info w-100" >Firms Download</button>
                   </a>
               </div>
             </div>
             <!-- End Customers Card -->
 
-              
+              <p>Add lightweight datatables to your project with using the 
+                <a href="https://github.com/fiduswriter/Simple-DataTables" target="_blank">
+                  Simple DataTables
+                </a> 
+                library. Just add 
+                <code>.datatable</code> 
+                class name to any table you wish to conver to a datatable</p>
 
               <!-- Table with stripped rows -->
               <!-- End Table with stripped rows -->

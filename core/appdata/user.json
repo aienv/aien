@@ -1,1 +1,39 @@
-{"users": [{"id": 1, "name": "Titan", "phone": "+11122", "email": "titan@ex.com", "location": "laland"}, {"id": 2, "name": "Kevin", "phone": "+445556", "email": "kevin@extra.com", "location": "Amrado"}]}
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Titan One",
+            "email": "titan@example.com",
+            "phone": "password123",
+            "location": "password123"
+        },
+        {
+            "id": 2,
+            "name": "Anna",
+            "phone": "5555",
+            "email": "anna@mail",
+            "location": "Accra"
+        },
+        {
+            "id": 3,
+            "name": "Kevin",
+            "phone": "1111",
+            "email": "kevein@mail",
+            "location": "Tesano"
+        },
+        {
+            "id": 4,
+            "name": "Brooks",
+            "phone": "miley",
+            "email": "brooks@mail",
+            "location": "2"
+        },
+        {
+            "id": 5,
+            "name": "Infor",
+            "phone": "888",
+            "email": "infor@mail",
+            "location": "Ohio"
+        }
+    ]
+}

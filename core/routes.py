@@ -3,7 +3,7 @@ from datetime import datetime
 from core import app
 from random import choice
 import string
-from flask import render_template, request, flash, redirect, url_for, send_file
+from flask import render_template, request, flash, redirect, url_for
 import json
 import os
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -17,11 +17,6 @@ FIRM_FILE = os.path.join(APP_ROOT, 'appdata', 'firm.json')
 @app.route('/')
 def index():
     return render_template('index.html')
-
-# URL handler for the "home" page
-@app.errorhandler(404)
-def not_found(error):
-    return render_template('admin/error.html')
 
 # URL handler for the "learn" page
 @app.route('/learn')
@@ -70,6 +65,8 @@ def error():
 ######################################################## 
 # FORM HANDLERS
 ########################################################
+
+import core.appdata.status as updater
 
 @app.route('/newuser', methods=['POST'])
 def new_user():
@@ -125,32 +122,10 @@ def new_firm():
     return render_template('sent.html')
 
 # URL handler for the "delete" page
-import core.appdata.status as updater
 @app.route('/logs')
 def clogs():
     updater.c_log()
     return redirect(url_for('admin'))
-
-import core.appdata.excel as xlsx_protocol
-
-# URL handler for the download resource
-@app.route('/download_users', methods=['GET'])
-def download_users():
-    xlsx_protocol.uhandle()
-    # get the music file path from the request
-    music_file_path = request.args.get('file_path')
-
-    # send the file to the client
-    return send_file(music_file_path, as_attachment=True)
-
-@app.route('/download_firms', methods=['GET'])
-def download_firms():
-    xlsx_protocol.fhandle()
-    # get the music file path from the request
-    music_file_path = request.args.get('file_path')
-
-    # send the file to the client
-    return send_file(music_file_path, as_attachment=True)
 
 # @app.route('/', methods=['GET', 'POST'])
 # def index():
