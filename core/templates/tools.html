@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Products - AiEN</title>
+    <meta property="og:title" content="Profile - Soft UI Pro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Open Sans;
+        font-size: 1rem;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.625;
+        color: var(--dl-color-secondary-400);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      html * {
+          -webkit-font-smoothing: antialiased;
+      }
+      input::placeholder, textarea::placeholder {
+         color: #d2d6da;
+      }
+    </style>
+    <link rel="stylesheet" href="static/style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="static/profile.css" rel="stylesheet" />
+
+      <div class="profile-container">
+        <div class="header-full-header">
+          <nav class="header-full-nav">
+            <div class="header-full-container">
+              <a href="{{ url_for('index') }}" class="header-full-navlink Large">
+                Ai evo nex
+              </a>
+              <div class="header-full-menu">
+                <a href="{{ url_for('index') }}" class="header-full-navlink1 Large">Learn</a>
+                <a href="#" class="header-full-navlink2 Large">
+                  Tools/Products
+                </a>
+                <a href="{{ url_for('business') }}" class="header-full-navlink3 Large">
+                  Ai for Business
+                </a>
+              </div>
+              <div class="header-full-container1">
+                <div class="header-full-container2">
+                  <div class="primary-pink-button-container">
+                    <a href="{{ url_for('join') }}"> 
+                    <button
+                      class="primary-pink-button-button button ButtonSmall"
+                    >
+                      <span>Join  Team</span>
+                    </button>
+                  </a>
+                  </div>
+                </div>
+                <svg viewBox="0 0 1024 1024" class="header-full-icon">
+                  <path
+                    d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </nav>
+        </div>
+        
+        <div class="profile-blog-posts">
+          <h1 class="profile-text11 HeadingTwo">
+            <span></span>
+            <span>Our Ai Tools and Projects</span>
+            <br />
+          </h1>
+          <div class="profile-container04">
+            <div class="blog-card-container">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-bags.jpg"
+                class="blog-card-image"
+              />
+              <h5 class="blog-card-text">
+                <span>CS & Programming Basics</span>
+              </h5>
+              <span>
+                <span>
+                  Requires a strong foundation in computer science, basic programming
+                  and scripting, algorithms, and operating systems.
+                </span>
+              </span>
+              <div class="next-button-container">
+                <button class="next-button-button button">
+                  <span class="next-button-text"><span>Start here</span></span>
+                  <svg viewBox="0 0 1024 1024" class="next-button-icon">
+                    <path
+                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="blog-card-container">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-clock.jpg"
+                class="blog-card-image"
+              />
+              <h5 class="blog-card-text">
+                <span>Introduction to AI Engineering</span>
+              </h5>
+              <span>
+                <span>
+                  In this module, students will learn about the fundamentals of AI engineering, 
+                  including machine learning algorithms.
+                </span>
+              </span>
+              <div class="next-button-container">
+                <button class="next-button-button button">
+                  <span class="next-button-text"><span>Start here</span></span>
+                  <svg viewBox="0 0 1024 1024" class="next-button-icon">
+                    <path
+                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="blog-card-container">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-wall.jpg"
+                class="blog-card-image"
+              />
+              <h5 class="blog-card-text">
+                <span>Python Programming for AI:</span>
+              </h5>
+              <span>
+                <span>
+                  This module will cover the basics of Python programming, which is essential for building AI models
+                </span>
+              </span>
+              <div class="next-button-container">
+                <button class="next-button-button button">
+                  <span class="next-button-text"><span>Start here</span></span>
+                  <svg viewBox="0 0 1024 1024" class="next-button-icon">
+                    <path
+                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="blog-card-container">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-bags.jpg"
+                class="blog-card-image"
+              />
+              <h5 class="blog-card-text">
+                <span>Data Wrangling and Preprocessing </span>
+              </h5>
+              <span>
+                <span>
+                  In this module, students will learn how to preprocess and clean 
+                  large datasets using various techniques
+                </span>
+              </span>
+              <div class="next-button-container">
+                <button class="next-button-button button">
+                  <span class="next-button-text"><span>Start here</span></span>
+                  <svg viewBox="0 0 1024 1024" class="next-button-icon">
+                    <path
+                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="blog-card-container">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-clock.jpg"
+                class="blog-card-image"
+              />
+              <h5 class="blog-card-text">
+                <span>Machine Learning Algorithms</span>
+              </h5>
+              <span>
+                <span>
+                  This module will cover the most common machine learning algorithms, including linear regression,
+                   logistic regression.
+                </span>
+              </span>
+              <div class="next-button-container">
+                <button class="next-button-button button">
+                  <span class="next-button-text"><span>Start here</span></span>
+                  <svg viewBox="0 0 1024 1024" class="next-button-icon">
+                    <path
+                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="blog-card-container">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-wall.jpg"
+                class="blog-card-image"
+              />
+              <h5 class="blog-card-text">
+                <span>Deep Learning</span>
+              </h5>
+              <span>
+                <span>
+                  This module will cover the fundamentals of deep learning, including neural networks,
+                   convolutional neural networks (CNNs).
+                </span>
+              </span>
+              <div class="next-button-container">
+                <button class="next-button-button button">
+                  <span class="next-button-text"><span>Start here</span></span>
+                  <svg viewBox="0 0 1024 1024" class="next-button-icon">
+                    <path
+                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="blog-card-container">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-bags.jpg"
+                class="blog-card-image"
+              />
+              <h5 class="blog-card-text">
+                <span>Natural Language Processing (NLP) </span>
+              </h5>
+              <span>
+                <span>
+                  In this module, students will learn how to process and analyze 
+                  natural language data using NLP techniques.
+                </span>
+              </span>
+              <div class="next-button-container">
+                <button class="next-button-button button">
+                  <span class="next-button-text"><span>Start here</span></span>
+                  <svg viewBox="0 0 1024 1024" class="next-button-icon">
+                    <path
+                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="blog-card-container">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-clock.jpg"
+                class="blog-card-image"
+              />
+              <h5 class="blog-card-text">
+                <span>Computer Vision</span>
+              </h5>
+              <span>
+                <span>
+                  This module will cover the basics of computer vision, including image processing, 
+                  object detection, and image segmentation.
+                </span>
+              </span>
+              <div class="next-button-container">
+                <button class="next-button-button button">
+                  <span class="next-button-text"><span>Start here</span></span>
+                  <svg viewBox="0 0 1024 1024" class="next-button-icon">
+                    <path
+                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="blog-card-container">
+              <img
+                alt="image"
+                src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-design-system/assets/img/color-wall.jpg"
+                class="blog-card-image"
+              />
+              <h5 class="blog-card-text">
+                <span>Reinforcement Learning</span>
+              </h5>
+              <span>
+                <span>
+                  In this module, students will learn about reinforcement learning, which is a type of machine learning.
+                </span>
+              </span>
+              <div class="next-button-container">
+                <button class="next-button-button button">
+                  <span class="next-button-text"><span>Start here</span></span>
+                  <svg viewBox="0 0 1024 1024" class="next-button-icon">
+                    <path
+                      d="M512 170l342 342-342 342-60-60 238-240h-520v-84h520l-238-240z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="footer-footer">
+          <div class="footer-container">
+            <div class="footer-container1">
+              <span class="footer-text">AiEN</span>
+              <span>Copyright © 2023 AiEN.</span>
+            </div>
+            <div class="footer-container2">
+              <div class="footer-container3">
+                <span class="footer-text02 Large">Company</span>
+                <span class="footer-text03 Large">About Us</span>
+                <span class="footer-text04 Large">Careers</span>
+                <span class="footer-text05 Large">Press</span>
+              </div>
+              <div class="footer-container4">
+                <span class="footer-text06 Large">Pages</span>
+                <span class="footer-text07 Large">Login</span>
+                <span class="footer-text08 Large">Register</span>
+                <span class="footer-text09 Large">About</span>
+              </div>
+              <div class="footer-container5">
+                <span class="footer-text10 Large">Products</span>
+                <span class="footer-text11 Large">Free</span>
+                <span class="footer-text12 Large">PRO</span>
+                <span class="footer-text13 Large">Latest</span>
+              </div>
+            </div>
+          </div>
+          <img
+            alt="image"
+            src="static/playground_assets/waves-white.svg"
+            class="footer-image"
+          />
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

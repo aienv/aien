@@ -1,0 +1,9 @@
+{
+    "firms": [
+        {
+            "id": 1,
+            "name": "Titan Firm",
+            "email": "titan@example.com"
+        }
+    ]
+}
