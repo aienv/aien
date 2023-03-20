@@ -1458,7 +1458,10 @@
   }
 }
 
+.infolink{
+  text-align: center;
+}
 .big-icon {
-  font-size: 102px;
+  font-size: 25px;
   color: #cb0c9ebb;
 }
