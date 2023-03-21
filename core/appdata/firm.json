@@ -1,9 +1,1 @@
-{
-    "firms": [
-        {
-            "id": 1,
-            "name": "Titan Firm",
-            "email": "titan@example.com"
-        }
-    ]
-}
+{"firms": [{"id": 1, "name": "Titan Firm", "email": "titan@example.com"}, {"id": 2, "phone": "asdf", "email": "asdf"}]}

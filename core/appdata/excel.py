@@ -27,6 +27,7 @@ df_merged.to_excel(USER_XLSX, index=False)
 ################################
 # Firm data
 ################################
+
 FIRM_FILE = os.path.join(APP_ROOT, '', 'firm.json')
 FIRM_XLSX = os.path.join(APP_ROOT, '', 'firms.xlsx')
 

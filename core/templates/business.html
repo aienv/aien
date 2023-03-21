@@ -7,6 +7,10 @@
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
 
+    <!-- Favicons -->
+    <link href="static/playground_assets/logo.ico" rel="icon">
+    <link href="static/playground_assets/logo.ico" rel="apple-touch-icon">
+
     <style data-tag="reset-style-sheet">
       html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
     </style>
@@ -45,83 +49,62 @@
   </head>
   <body>
     <div>
-      <link href="static/coming-soon.css" rel="stylesheet" />
+      <link href="static/profile.css" rel="stylesheet" />
+      <link href="static/coming-soon.css" rel="stylesheet" />   
 
       <div class="coming-soon-container">
-        <div data-role="Header" class="header-header">
-          <nav class="header-nav">
-            <div class="header-container">
-              <a href="{{ url_for('index') }}" class="header-navlink Large">
-                Ai env nex
+        <div class="header-full-header">
+          <nav class="header-full-nav">
+            <div class="header-full-container">
+              <a href="{{ url_for('index') }}" class="header-full-navlink Large">
+                ← Home
               </a>
-              <div class="header-menu">
-                <a href="{{ url_for('index') }}" class="header-navlink1 Large">Home</a>
-                <a href="#" class="header-navlink2 Large">Tools/Products</a>
+              <div class="header-full-menu">
+                <a href="{{ url_for('index') }}" class="header-full-navlink1 Large">Home</a>
+                <a href="#" class="header-full-navlink2 Large">
+                  Tools/Products
+                </a>
+                <a href="{{ url_for('business') }}" class="header-full-navlink3 Large">
+                  Ai for Business
+                </a>
               </div>
-              <div class="header-container1">
-                <div class="header-container2">
+              <div class="header-full-container1">
+                <div class="header-full-container2">
                   <div class="primary-pink-button-container">
                     <a href="{{ url_for('join') }}">
                     <button
                       class="primary-pink-button-button button ButtonSmall"
                     >
-                      <span>Join Team</span>
+                      <span>Join  Team</span>
                     </button>
                     </a>
                   </div>
                 </div>
-                <div data-role="BurgerMenu" class="header-burger-menu">
-                  <svg viewBox="0 0 1024 1024" class="header-icon">
-                    <path
-                      d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
-                    ></path>
-                  </svg>
-                </div>
+                <img
+                alt="image"
+                src="static/playground_assets/blogo.png"
+                class="header-full-icon"
+              />
+                <!--<svg viewBox="0 0 1024 1024" class="header-full-icon">
+                  <path
+                    d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
+                  ></path>
+                </svg>-->
               </div>
             </div>
           </nav>
-          <div data-role="MobileMenu" class="header-mobile-menu">
-            <div class="header-top">
-              <a href="{{ url_for('index') }}" class="header-navlink4 Large">
-                Ai env nex
-              </a>
-              <div data-role="CloseMobileMenu" class="header-close-menu">
-                <svg viewBox="0 0 1024 1024" class="header-icon2">
-                  <path
-                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <div class="header-mid">
-              <div class="header-menu1">
-                <a href="{{ url_for('index') }}" class="header-navlink5 Large">Home</a>
-                <a href="#" class="header-navlink6 Large">Tools/Products</a>
-              </div>
-            </div>
-            <div class="header-bot">
-              <div class="primary-pink-button-container">
-                <a href="{{ url_for('join') }}">
-                <button class="primary-pink-button-button button ButtonSmall">
-                  <span>Join Team</span>
-                </button>
-                </a>
-              </div>
-            </div>
-          </div>
+
         </div>
+
         <div class="coming-soon-container1">
           <div class="coming-soon-main">
             <div class="coming-soon-container2">
-              <h1 class="coming-soon-text HeadingOne">Supercharge your business</h1>
-              <h1 class="coming-soon-text1">with Ai Technologies</h1>
+              <h1 class="coming-soon-text HeadingOne">Gearup your business</h1>
+              <h1 class="coming-soon-text1">with AiEN</h1>
               <p class="coming-soon-text2 Lead">
                 <span class="coming-soon-text3">
                   Want to streamline your operations, reduce costs, and improve 
-                  your bottom line. By integrating AI into your business, you 
-                  can make smarter, faster, and more informed decisionsby collecting
-                  and processing data. Get in touch today to learn more about how 
-                  we can help you integrate your business.
+                  your bottom line.
                 </span>
               </p>
               <form  class="coming-soon-container3" action="{{ url_for('new_firm') }}" method="POST">
@@ -240,7 +223,6 @@
             <div class="footer-gray-container1">
               <div class="footer-gray-container2">
                 <span class="footer-gray-text">AiEN</span>
-                <span class="footer-gray-text01">Artificial Inteligence</span>
                 <div class="footer-gray-container3">
                   <a
                     href="#"
