@@ -3,45 +3,60 @@ import json
 import os
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
-USER_FILE = os.path.join(APP_ROOT, '', 'user.json')
-USER_XLSX = os.path.join(APP_ROOT, '', 'user.xlsx')
-################################
-# User data
-################################
-# Load the JSON data
-with open(USER_FILE) as f:
-    data = json.load(f)
-    
-# Load the Excel data into a DataFrame
-df_excel = pd.read_excel(USER_XLSX)
+USERSS_FILE = os.path.join(APP_ROOT, '', 'user.json')
+FIRM_FILE = os.path.join(APP_ROOT, '', 'firm.json')
 
-# Convert the JSON data to a DataFrame
-df_json = pd.json_normalize(data, 'users')
+def strip_appdata(path):
+    return path.replace('\\appdata', '')
 
-# Merge the Excel and JSON data
-df_merged = pd.concat([df_excel, df_json])
-
-# Save the merged data to the Excel file
-df_merged.to_excel(USER_XLSX, index=False)
+APP_ROOT = strip_appdata(APP_ROOT)
 
 ################################
 # Firm data
 ################################
 
-FIRM_FILE = os.path.join(APP_ROOT, '', 'firm.json')
-FIRM_XLSX = os.path.join(APP_ROOT, '', 'firms.xlsx')
+FIRM_XLSX = os.path.join(APP_ROOT, 'appdata', 'firms.xlsx')
 
-with open(FIRM_FILE) as f:
-    data = json.load(f)
+def fhandle():
+    with open(FIRM_FILE) as f:
+        data = json.load(f)
+        
+    # Load the Excel data into a DataFrame
+    df_excel = pd.read_excel(FIRM_XLSX)
+
+    # Convert the JSON data to a DataFrame
+    df_json = pd.json_normalize(data, 'firms')
+
+    # Merge the Excel and JSON data
+    df_merged = pd.concat([df_excel, df_json])
+
+    # Save the merged data to the Excel file
+    df_merged.to_excel(FIRM_XLSX, index=False)
     
-# Load the Excel data into a DataFrame
-df_excel = pd.read_excel(FIRM_XLSX)
+################################
+# User data
+################################
 
-# Convert the JSON data to a DataFrame
-df_json = pd.json_normalize(data, 'firms')
 
-# Merge the Excel and JSON data
-df_merged = pd.concat([df_excel, df_json])
+USERSS_XLSX = os.path.join(APP_ROOT, 'appdata', 'user.xlsx')
 
-# Save the merged data to the Excel file
-df_merged.to_excel(FIRM_XLSX, index=False)
+def uhandle():
+    with open(USERSS_FILE) as f:
+        data = json.load(f)
+         
+    # Load the Excel data into a DataFrame
+    df_excel = pd.read_excel(USERSS_XLSX )
+
+    # Convert the JSON data to a DataFrame
+    df_json = pd.json_normalize(data, 'users')
+
+    # Merge the Excel and JSON data
+    df_merged = pd.concat([df_excel, df_json])
+
+    # Save the merged data to the Excel file
+    # Delete the old file if it exists
+    if os.path.isfile(USERSS_XLSX):
+        os.remove(USERSS_XLSX)
+
+    # Save the merged data to a new Excel file with the same name
+    df_merged.to_excel(USERSS_XLSX, index=False)
