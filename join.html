@@ -55,22 +55,22 @@
         <div class="header-full-header">
           <nav class="header-full-nav">
             <div class="header-full-container">
-              <a href="{{ url_for('index') }}" class="header-full-navlink Large">
+              <a href="index" class="header-full-navlink Large">
                 ← Home
               </a>
               <div class="header-full-menu">
-                <a href="{{ url_for('index') }}" class="header-full-navlink1 Large">Home</a>
+                <a href="index" class="header-full-navlink1 Large">Home</a>
                 <a href="#" class="header-full-navlink2 Large">
                   Tools/Products
                 </a>
-                <a href="{{ url_for('business') }}" class="header-full-navlink3 Large">
+                <a href="business" class="header-full-navlink3 Large">
                   Ai for Business
                 </a>
               </div>
               <div class="header-full-container1">
                 <div class="header-full-container2">
                   <div class="primary-pink-button-container">
-                    <a href="{{ url_for('join') }}">
+                    <a href="join">
                     <button
                       class="primary-pink-button-button button ButtonSmall"
                     >
@@ -102,7 +102,7 @@
               <span class="profile-text20 Lead">
                 We'd like to talk with you.
               </span>
-              <form class="profile-form1" action="{{ url_for('new_user') }}" method="POST">
+              <form class="profile-form1" action="mailto:mail@aien.tech" method="post" enctype="text/plain">
                 <label class="profile-text21 Label">Full Name</label>
                 <input
                   type="text"

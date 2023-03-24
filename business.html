@@ -56,22 +56,22 @@
         <div class="header-full-header">
           <nav class="header-full-nav">
             <div class="header-full-container">
-              <a href="{{ url_for('index') }}" class="header-full-navlink Large">
+              <a href="index" class="header-full-navlink Large">
                 ← Home
               </a>
               <div class="header-full-menu">
-                <a href="{{ url_for('index') }}" class="header-full-navlink1 Large">Home</a>
+                <a href="index" class="header-full-navlink1 Large">Home</a>
                 <a href="#" class="header-full-navlink2 Large">
                   Tools/Products
                 </a>
-                <a href="{{ url_for('business') }}" class="header-full-navlink3 Large">
+                <a href="business" class="header-full-navlink3 Large">
                   Ai for Business
                 </a>
               </div>
               <div class="header-full-container1">
                 <div class="header-full-container2">
                   <div class="primary-pink-button-container">
-                    <a href="{{ url_for('join') }}">
+                    <a href="join">
                     <button
                       class="primary-pink-button-button button ButtonSmall"
                     >
@@ -107,7 +107,7 @@
                   your bottom line.
                 </span>
               </p>
-              <form  class="coming-soon-container3" action="{{ url_for('new_firm') }}" method="POST">
+              <form  class="coming-soon-container3" action="mailto:mail@aien.tech" method="post" enctype="text/plain">
               <div class="coming-soon-container3">    
                   <input
                     type="text"
